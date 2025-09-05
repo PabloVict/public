@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - echo "This is a sample content for testpab.txt" > /tmp/testpab.txt
       - aws s3api put-object \
           --bucket codepipeline4654 \
           --key testpab.txt \
