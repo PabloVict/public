@@ -1,0 +1,6 @@
+aws s3api put-object \
+  --bucket codepipeline4654 \
+  --key testpab.txt \
+  --body /tmp/testpab.txt \
+  --server-side-encryption aws:kms \
+  --region us-east-1
