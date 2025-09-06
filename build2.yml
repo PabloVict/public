@@ -5,7 +5,7 @@ phases:
     commands:
       - echo "This is a sample content for testpab.txt" > /tmp/testpab.txt
       - aws s3api put-object \
-          --bucket codepipeline4654 \
+          --bucket codepipeline-us-east-1-1baa67fb5b7c-4c86-b824-1afaf19308af \
           --key testpab.txt \
           --body /tmp/testpab.txt \
           --server-side-encryption aws:kms \
